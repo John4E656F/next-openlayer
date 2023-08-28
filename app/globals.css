@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body, /* Targeting the body */
+h1, h2, h3, h4, h5, h6, /* Targeting all headings */
+p, /* Targeting all paragraphs */
+a, /* Targeting all links */
+button, /* Targeting all buttons */
+input, /* Targeting all input fields */
+textarea, /* Targeting all textareas */
+label, /* Targeting all labels */
+span, /* Targeting all spans */
+div /* Targeting all divs */ {
+  color: black; /* Setting the color to black */
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+}
