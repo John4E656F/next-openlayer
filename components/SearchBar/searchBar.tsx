@@ -15,6 +15,7 @@ export const SearchBar = () => {
       marker: {
         HiSearch,
       },
+      searchLabel: 'Enter address',
     });
 
     map.addControl(searchControl);
